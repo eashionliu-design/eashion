@@ -15,7 +15,7 @@ def competition():
 def activities():
     if request.method == 'POST':
         # 2. 讀取學生的問題
-        question = request.form.get('question', '').strip()
+        question = request.form.get('question', '1').strip()
         # 3. 查詢題庫的對應答案
         answer = "我喜歡運動、聽音樂"
         # 4. 回傳答案給學生
